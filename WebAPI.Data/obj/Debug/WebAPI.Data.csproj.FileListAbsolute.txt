@@ -1,0 +1,10 @@
+D:\PowerGate\Training\TestAPI\WebAPI.Data\bin\Debug\WebAPI.Data.dll.config
+D:\PowerGate\Training\TestAPI\WebAPI.Data\bin\Debug\WebAPI.Data.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Data\bin\Debug\WebAPI.Data.pdb
+D:\PowerGate\Training\TestAPI\WebAPI.Data\bin\Debug\EntityFramework.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Data\bin\Debug\EntityFramework.xml
+D:\PowerGate\Training\TestAPI\WebAPI.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\PowerGate\Training\TestAPI\WebAPI.Data\obj\Debug\WebAPI.Data.csprojResolveAssemblyReference.cache
+D:\PowerGate\Training\TestAPI\WebAPI.Data\obj\Debug\WebAPI.Data.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Data\obj\Debug\WebAPI.Data.pdb

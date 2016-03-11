@@ -4,37 +4,53 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using WebAPI.Models;
+using WebAPI.Business;
+using WebAPI.Data;
 
 namespace WebAPI.Controllers
 {
     public class CommentsController : ApiController
-    {
-        // GET api/values
+    {        
+        // GET api/Comments
         public IEnumerable<Comment> Get()
         {
-            return null;
+            using (var unitOfWork = new UnitOfWork(new TestAPIEntities()))
+            {
+                return unitOfWork.Comments.Get();
+            }
+            
         }
 
-        // GET api/values/5
+        // GET api/Comments/5
         public Comment Get(int id)
         {
-            return null;
+            using (var unitOfWork = new UnitOfWork(new TestAPIEntities()))
+            {
+                return unitOfWork.Comments.GetById(id);
+            }
         }
-
-        // POST api/values
-        public void Post([FromBody]string value)
+        
+        public IEnumerable<Comment> GetCommentByAuthor(string author)
         {
+            using (var unitOfWork = new UnitOfWork(new TestAPIEntities()))
+            {
+                return unitOfWork.Comments.GetCommentsByAuthor(author);
+            }
         }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+               
 
         // DELETE api/values/5
         public void Delete(int id)
         {
+            using (var unitOfWork = new UnitOfWork(new TestAPIEntities()))
+            {
+                var comment = unitOfWork.Comments.GetById(id);
+                if (comment!=null)
+                {
+                    unitOfWork.Comments.Remove(comment);
+                    unitOfWork.Complete();//Save Change
+                }                
+            }
         }
     }
 }

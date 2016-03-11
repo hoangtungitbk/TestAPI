@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Web.Http;
 
 namespace WebAPI
@@ -9,6 +10,9 @@ namespace WebAPI
     {
         public static void Register(HttpConfiguration config)
         {
+            //Add this config to return Json
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+
             // Web API configuration and services
 
             // Web API routes
@@ -19,6 +23,17 @@ namespace WebAPI
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+                        
+            config.Routes.MapHttpRoute(
+               name: "ActionBased",
+               routeTemplate: "api/{controller}/{action}/{id}",
+               defaults: new { id = RouteParameter.Optional }
+           );
+            config.Routes.MapHttpRoute(
+              name: "ActionBased2",
+              routeTemplate: "api/{controller}/action/{action}/{id}",
+              defaults: new { id = RouteParameter.Optional }
+          );
         }
     }
 }

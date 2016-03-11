@@ -1,0 +1,12 @@
+D:\PowerGate\Training\TestAPI\WebAPI.Business\obj\Debug\WebAPI.Business.csprojResolveAssemblyReference.cache
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\WebAPI.Business.dll.config
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\WebAPI.Business.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\WebAPI.Business.pdb
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\EntityFramework.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\WebAPI.Data.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\WebAPI.Data.pdb
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\EntityFramework.xml
+D:\PowerGate\Training\TestAPI\WebAPI.Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\PowerGate\Training\TestAPI\WebAPI.Business\obj\Debug\WebAPI.Business.dll
+D:\PowerGate\Training\TestAPI\WebAPI.Business\obj\Debug\WebAPI.Business.pdb
